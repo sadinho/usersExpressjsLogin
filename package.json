@@ -1,9 +1,7 @@
 {
-  "name": "usersExpressjsLogin",
+  "name": "expressjwt",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/sadinho/usersExpressjsLogin.git",
-  "author": "sadinho <50503203+sadinho@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
     "dev": "npx nodemon --exec ts-node --files src/index.ts",
