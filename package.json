@@ -5,7 +5,14 @@
   "license": "MIT",
   "scripts": {
     "dev": "npx nodemon --exec ts-node --files src/index.ts",
-    "typeorm": "npx ts-node ./node_modules/typeorm/cli.js"
+    "typeorm": "npx ts-node ./node_modules/typeorm/cli.js",
+    "compile": "npx tsc",
+    "start": "npx ts-node --files src/index.ts",
+    "test": "npx jest --coverage",
+    "lint": "npx eslint -c .eslintrc.js src/**/*.ts",
+    "docker-build": "docker build -t getting-started .",
+    "docker-run": "docker run -p 8000:8000 -t docker/getting-started",
+    "commit": "git-cz"
   },
   "devDependencies": {
     "@types/jsonwebtoken": "^8.5.5",
@@ -19,6 +26,7 @@
     "@types/express": "^4.17.13",
     "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
+    "jest": "^27.2.0",
     "jsonwebtoken": "^8.5.1",
     "pg": "^8.7.1",
     "reflect-metadata": "^0.1.13",
